@@ -1,0 +1,6 @@
+@use "uswds-core" as uswds;
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(uswds.units("card"), 1fr));
+}

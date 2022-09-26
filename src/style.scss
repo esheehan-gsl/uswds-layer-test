@@ -1,0 +1,11 @@
+@use "sass:meta";
+
+@layer framework {
+	@include meta.load-css("uswds");
+}
+
+@layer layout {
+	// Comment out this line, and the uswds module is able to forward
+	// uswds-typography.
+	@include meta.load-css("layout");
+}
